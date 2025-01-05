@@ -1,0 +1,24 @@
+name: "SSH File Sync"
+version: "1.0.0"
+slug: "ssh_file_sync"
+description: "Addon for syncing files via SSH"
+arch:
+  - amd64
+  - armv7
+  - arm64
+startup: "application"
+boot: "auto"
+options:
+  remote_host: "192.168.1.100"
+  remote_port: 22
+  username: "user"
+  password: "password"
+  remote_dir: "/remote/path"
+  local_dir: "/local/path"
+schema:
+  remote_host: str
+  remote_port: int
+  username: str
+  password: str
+  remote_dir: str
+  local_dir: str
